@@ -1,7 +1,7 @@
 import React from "react"
 import Title from "../Title"
 import styles from "../../css/about.module.css"
-import img from "../../images/defaultBcg.jpeg"
+import img from "../../images/defaultBcg.jpg"
 const About = () => {
   return (
     <section className={styles.about}>

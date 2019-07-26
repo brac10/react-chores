@@ -8,7 +8,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const getImage = graphql`
   query {
-    file(relativePath: { eq: "defaultBcg.jpeg" }) {
+    file(relativePath: { eq: "defaultBcg.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -47,6 +47,16 @@ const Chore = ({ chore }) => {
           <div className={styles.details}>
             <h3>${price}</h3>
           </div>
+          <button
+            className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"
+            data-item-id={chore.content_id}
+            data-item-name={chore.name}
+            data-item-price={chore.price}
+            data-item-image={mainImage}
+            data-item-url="https://rangerpi.netlify.com/"
+          >
+            add to cart
+          </button>
         </div>
       </div>
     </article>
