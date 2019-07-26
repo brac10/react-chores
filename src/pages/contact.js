@@ -14,7 +14,7 @@ export default function contact({ data }) {
 }
 export const query = graphql`
   query {
-    contactBcg: file(relativePath: { eq: "connectBcg.jpg" }) {
+    contactBcg: file(relativePath: { eq: "connectBcg.jpeg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
