@@ -1,10 +1,11 @@
 import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
-import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
 import logo from "../images/logo.svg"
+import { FaCartArrowDown, FaAlignRight } from "react-icons/fa"
+
 const Navbar = () => {
   const [isOpen, setNav] = useState()
   const toggleNav = () => {
@@ -36,6 +37,9 @@ const Navbar = () => {
               </li>
             )
           })}
+          <li className={styles.navHeader}>
+            <FaCartArrowDown className="cart-icon snipcart-checkout" />
+          </li>
         </ul>
         <div className={styles.navSocialLinks}>
           {socialIcons.map((item, index) => {

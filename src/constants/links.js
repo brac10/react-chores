@@ -12,6 +12,10 @@ export default [
     text: "chores",
   },
   {
+    path: "/contact",
+    text: "contact",
+  },
+  {
     path: "/checkout",
     text: "checkout",
   },
