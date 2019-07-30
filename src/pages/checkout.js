@@ -15,7 +15,7 @@ const checkout = ({ data }) => {
 
 export const query = graphql`
   query {
-    checkoutBcg: file(relativePath: { eq: "checkoutBcg.jpg" }) {
+    checkoutBcg: file(relativePath: { eq: "details-2.jpeg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
