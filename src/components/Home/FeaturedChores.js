@@ -30,7 +30,7 @@ const FeaturedChores = () => {
   const chores = response.featuredChores.edges
   return (
     <section className={styles.chores}>
-      <Title title="Available" subtitle="chores" />
+      <Title title="featured" subtitle="chores" />
       <div className={styles.center}>
         {chores.map(({ node }) => {
           return <Chore key={node.contentful_id} chore={node} />

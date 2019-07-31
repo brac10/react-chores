@@ -16,7 +16,7 @@ export default class chores extends Component {
 
 export const query = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "details-1.jpeg" }) {
+    defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
